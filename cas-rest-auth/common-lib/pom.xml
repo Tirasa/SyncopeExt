@@ -19,25 +19,35 @@ limitations under the License.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>net.tirasa.syncope</groupId>
-    <artifactId>syncope-ext</artifactId>
+    <groupId>net.tirasa.syncope.ext</groupId>
+    <artifactId>syncope-ext-cas-rest-auth</artifactId>
     <version>2.0.2-SNAPSHOT</version>
   </parent>
 
-  <name>Tirasa Ext for Apache Syncope: CAS REST AuthN</name>
-  <description>Tirasa Ext for Apache Syncope: CAS REST AuthN</description>
-  <groupId>net.tirasa.syncope.ext</groupId>
-  <artifactId>syncope-ext-cas-rest-auth</artifactId>
-  <packaging>pom</packaging>
+  <name>Tirasa Ext for Apache Syncope: CAS REST AuthN Common Lib</name>
+  <description>Tirasa Ext for Apache Syncope: CAS REST AuthN Common Lib</description>
+  <groupId>net.tirasa.syncope.ext.cas-rest-auth</groupId>
+  <artifactId>syncope-ext-cas-rest-auth-common-lib</artifactId>
+  <packaging>jar</packaging>
   
   <properties>
-    <rootpom.basedir>${basedir}/..</rootpom.basedir>
+    <rootpom.basedir>${basedir}/../..</rootpom.basedir>
   </properties>
-  
-  <modules>
-    <module>common-lib</module>
-    <module>rest-api</module>
-    <module>logic</module>
-    <module>rest-cxf</module>
-  </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.syncope.common</groupId>
+      <artifactId>syncope-common-lib</artifactId>
+      <version>${syncope.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 </project>
