@@ -28,7 +28,7 @@ limitations under the License.
   <description>Tirasa Ext for Apache Syncope</description>
   <groupId>net.tirasa.syncope</groupId>
   <artifactId>syncope-ext</artifactId>
-  <version>2.0.2-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <url>https://github.com/Tirasa/SyncopeExt</url>
