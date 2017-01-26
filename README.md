@@ -30,3 +30,5 @@ Support for [CAS REST Authentication](https://apereo.github.io/cas/5.0.x/install
 * support - via REST or [Admin Console](https://syncope.apache.org/docs/reference-guide.html#admin-console) - for tuning the
 CAS [SimplePrincipal](https://github.com/apereo/cas/blob/master/core/cas-server-core-authentication/src/main/java/org/apereo/cas/authentication/principal/SimplePrincipal.java)
 instances returned by the REST endpoint
+
+<a href="https://travis-ci.org/Tirasa/SyncopeExt"><img src="https://api.travis-ci.org/Tirasa/SyncopeExt.png"/></a>

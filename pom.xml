@@ -54,6 +54,11 @@ limitations under the License.
     <developerConnection>scm:git:git@github.com:Tirasa/SyncopeExt.git</developerConnection>
   </scm>
 
+  <ciManagement>
+    <system>Travis CI</system>
+    <url>https://travis-ci.org/Tirasa/SyncopeExt</url>
+  </ciManagement>
+
   <developers>
     <developer>
       <id>ilgrosso</id>
